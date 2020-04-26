@@ -1,7 +1,6 @@
 import React from 'react'
 import { AppBar, Toolbar, IconButton, 
     Typography } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu'
 import { Link } from 'react-router-dom'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles' 
 
@@ -16,7 +15,7 @@ const theme = createMuiTheme({
   },
 })
 
-const Navigation = () => {
+const Navigation = (props) => {
   return (
     <ThemeProvider theme={theme}>
     <AppBar position="relative">

@@ -1,10 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import BusinessInfo from './BusinessInfo'
 
 const Home = (props) => {
   return (
     <div>
-      Hello
+      {/* {props.businesses.map((business, index) => (
+        <li>{business.Name}</li>
+      ))} */}
+      <BusinessInfo />
     </div>
   )
 }

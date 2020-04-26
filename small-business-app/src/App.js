@@ -2,17 +2,31 @@ import React from 'react';
 import './App.css';
 import Navigation from './components/Navigation'
 import Router from './Router'
-import {BrowserRouter} from 'react-router-dom'
-// import { Provider } from 'react-redux'
+import { BrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from './redux/store'
 
 
+function App () {
+  // console.log(props.businesses)
+  // state = {
+  //   loggedIn:false
+  // }
 
-function App() {
+  // onLogin(event) {
+  //   this.setState({
+  //     loggedIn: !this.state.loggedIn
+  //   })
+  //   console.log(this.state.loggedIn, "check")
+  // }
+  
   return (
-    <BrowserRouter>
-      <Navigation />
-      <Router />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Navigation />
+        <Router />
+      </BrowserRouter>
+    </Provider>
   )
 }
 
