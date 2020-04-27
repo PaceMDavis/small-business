@@ -13,9 +13,23 @@ export const removeBusiness = (index) => {
 }
 
 
-export const login = (user) => {
+export const login = (bool) => {
   return {
     type: 'TOGGLE_LOGIN',
-    value: user
+    value: bool
+  }
+}
+
+export const logout = (bool) => {
+  return {
+    type: 'TOGGLE_LOGOUT',
+    value: bool
+  }
+}
+
+export const user = (name) => {
+  return {
+    type: 'USER_INFO',
+    value: name
   }
 }

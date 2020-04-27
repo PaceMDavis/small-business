@@ -4,7 +4,8 @@ import Home from '../components/Home'
 
 const mapStateToProps = (state) => {
   return {
-      businesses: state.businesses
+      businesses: state.businesses,
+      isLoggedIn: state.isLoggedIn
   }
 }
 

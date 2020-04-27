@@ -3,26 +3,35 @@ import { combineReducers } from 'redux'
 const businesses = (state = [], action) => {
   
   switch(action.type) {
-    // case 'ADD_BUSINESS':
-    //   return [...state, action.value]
-    // case 'REMOVE_BUSINESS':
-    //   const newState = [...state]
-    //   newState.splice(action.value,1)
+    case 'ADD_BUSINESS':
+      return [...state, action.value]
+    case 'REMOVE_BUSINESS':
+      const newState = [...state]
+      newState.splice(action.value,1)
     default:
       return state;
   }
 }
 
-const login = (state = false, action) => {
+const user = (state = null, action) => {
   switch(action.type) {
-    case 'TOGGLE_LOGIN' :
-      return {
-        ...state,
-        isLoggedIn: !state.isLoggedIn
-      }
+    case 'USER_INFO' :
+      return action.value
     default:
       return state
   }
 }
 
-export default combineReducers({businesses, login})
+const isLoggedIn = (state = false, action) => {
+  console.log(state, action)
+  switch(action.type) {
+    case 'TOGGLE_LOGIN' :
+      return true
+    case 'TOGGLE_LOGOUT' :
+      return false
+    default:
+      return state
+  }
+}
+
+export default combineReducers({businesses, isLoggedIn, user})

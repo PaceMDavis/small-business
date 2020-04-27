@@ -5,6 +5,7 @@ const BusinessDetail = (props) => {
   const id = props.match.params.id
 
   const info = props.businesses.find(c => c.id == id)
+  console.log(props.businesses, id)
 
   return (
     <Container>
