@@ -13,9 +13,9 @@ export const removeBusiness = (index) => {
 }
 
 
-export const login = (login) => {
+export const login = (user) => {
   return {
     type: 'TOGGLE_LOGIN',
-    value: login
+    value: user
   }
 }

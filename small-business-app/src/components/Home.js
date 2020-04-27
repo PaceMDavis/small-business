@@ -1,13 +1,10 @@
 import React from 'react'
-import BusinessInfo from './BusinessInfo'
+import BusinessInfo from '../containers/BusinessInfo'
 
 const Home = (props) => {
   return (
     <div>
-      {/* {props.businesses.map((business, index) => (
-        <li>{business.Name}</li>
-      ))} */}
-      <BusinessInfo />
+     <BusinessInfo />
     </div>
   )
 }

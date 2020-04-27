@@ -3,16 +3,16 @@ import { Button, TextField } from '@material-ui/core'
 
 const LogInForm = (props) => {
  
-  // const [onLogin, setOnLogin] = React.useState(false)
+  const [onLogin, setOnLogin] = React.useState(false)
 
-  // const login = () => {
-  //   setOnLogin(!onLogin)
-  // }
-  // console.log(props.isLoggedIn)
+  const login = () => {
+    setOnLogin(!onLogin)
+  }
+  console.log(login)
   return (
     <div>
       <form 
-      // onSubmit={login} value={onLogin}
+      onSubmit={props.login} 
       >
         <TextField
         required id="standard-required"

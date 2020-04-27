@@ -20,7 +20,7 @@ const Navigation = (props) => {
     <ThemeProvider theme={theme}>
     <AppBar position="relative">
       <Toolbar color="primary" >
-        <Typography variant ="h7" color="secondary" style={{flexGrow: "1"}}>
+        <Typography variant ="h6" color="secondary" style={{flexGrow: "1"}}>
           Austin Small Business
         </Typography>
         <ul className="nav-list">
