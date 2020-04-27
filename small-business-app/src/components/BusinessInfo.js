@@ -28,17 +28,17 @@ const BusinessInfo = (props) => {
             <TableCell>Address</TableCell>
             <TableCell>Delete</TableCell>
           </TableRow>
-          {props.businesses.map((business, index) => (
-            <TableRow key={index}>
+          {props.businesses.map((business, idx) => (
+            <TableRow key={idx}>
               <Link to={`/info/${business.id}`}>
                 <TableCell>{business.Name}</TableCell>
               </Link> 
               <TableCell>{business.Description}</TableCell>
               <TableCell>{business.Hours}</TableCell>
               <TableCell>{business.Address}</TableCell>
-              <TableCell onClick ={() => props.removeBusiness(index)} >
+              <TableCell >
                 <DeleteIcon
-                  />
+                  onClick ={() => props.removeBusiness(idx)}/>
               </TableCell>
             </TableRow>
           ))}
