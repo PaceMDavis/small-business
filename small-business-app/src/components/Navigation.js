@@ -61,7 +61,9 @@ class Navigation extends React.Component {
         </ul>
       </Toolbar>
     </AppBar>
-    <UserInfo />
+    <nav className="user-info">
+      <p>Logged in as: {this.state.user}</p>
+    </nav>
  </ThemeProvider>
       
     

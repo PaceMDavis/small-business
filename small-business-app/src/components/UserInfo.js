@@ -10,11 +10,10 @@ return (
   <AppBar position ="relative" className='user-info'>
         <Toolbar >
           <Typography variant="p" className="user-info-p">
-            Logged in as: {props.user}
+            Logged in as: {props.user.username}
           </Typography>
         </Toolbar>
   </AppBar>
-
  )
 } 
 
