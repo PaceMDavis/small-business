@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -50,4 +56,23 @@
 a {
   text-decoration: none;
   color: white
+}
+
+.icon:hover {
+  cursor: pointer
+}
+
+.text-red {
+  color: red
+}
+
+.user-info {
+  background-color: rgb(190, 190, 190) !important;
+  color: rgba(75, 74, 74, 0.596) !important;
+  display: flex;
+  align-items: flex-start;
+  max-height: 40px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
 }

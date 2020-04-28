@@ -14,7 +14,7 @@ const BusinessInfo = (props) => {
     props.logout(false)
   }
 
-  console.log(props.isLoggedIn, "barry")
+  // console.log(props.isLoggedIn, "barry")
   
   return (
     props.isLoggedIn ? (
@@ -38,6 +38,7 @@ const BusinessInfo = (props) => {
               <TableCell>{business.Address}</TableCell>
               <TableCell >
                 <DeleteIcon
+                  className ="icon text-red"
                   onClick ={() => props.removeBusiness(idx)}/>
               </TableCell>
             </TableRow>

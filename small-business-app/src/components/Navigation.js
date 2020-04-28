@@ -1,8 +1,10 @@
 import React from 'react'
+import UserInfo from './UserInfo'
 import { AppBar, Toolbar, 
     Typography } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles' 
+import grey from '@material-ui/core/colors/grey'
 
 
 const theme = createMuiTheme({
@@ -17,10 +19,13 @@ const theme = createMuiTheme({
 })
 
 
+
+
 class Navigation extends React.Component {
 
   state = {
-    loggedIn: this.props.isLoggedIn
+    loggedIn: this.props.isLoggedIn,
+    user: this.props.user
   }
 
   handleLogout = event => {
@@ -37,7 +42,7 @@ class Navigation extends React.Component {
     // console.log(this.props.isLoggedIn, 'blue')
   return (
     this.state.loggedIn ? (
-      <ThemeProvider theme={theme}>
+  <ThemeProvider theme={theme}>
     <AppBar position="relative">
       <Toolbar color="primary" >
         <Typography variant ="h6" color="secondary" style={{flexGrow: "1"}}>
@@ -51,12 +56,15 @@ class Navigation extends React.Component {
             <Link to="/" onClick={this.handleLogout}> Logout </Link> 
           </li>
           <li className="nav-list-item">
-            <Link to ='/login'>Add Business</Link>
+            <Link to ='/add'>Add Business</Link>
           </li>
         </ul>
       </Toolbar>
     </AppBar>
-    </ThemeProvider>
+    <UserInfo />
+ </ThemeProvider>
+      
+    
     ) : (
     <ThemeProvider theme={theme}>
     <AppBar position="relative">

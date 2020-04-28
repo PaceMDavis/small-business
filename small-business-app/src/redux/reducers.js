@@ -8,6 +8,7 @@ const businesses = (state = [], action) => {
     case 'REMOVE_BUSINESS':
       const newState = [...state]
       newState.splice(action.value,1)
+      return newState
     default:
       return state;
   }
@@ -23,7 +24,7 @@ const user = (state = null, action) => {
 }
 
 const isLoggedIn = (state = false, action) => {
-  console.log(state, action)
+  // console.log(state, action)
   switch(action.type) {
     case 'TOGGLE_LOGIN' :
       return true
