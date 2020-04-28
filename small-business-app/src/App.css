@@ -76,3 +76,20 @@ a {
   margin: 0px;
   font-size: 12px;
 }
+
+
+.form {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  padding:50px;
+  
+}
+
+#button-login {
+  background: rgba(156, 156, 156, 0.589);
+  color:rgb(0, 0, 0);
+  padding: 10px 80px;
+  font-weight: bold
+}

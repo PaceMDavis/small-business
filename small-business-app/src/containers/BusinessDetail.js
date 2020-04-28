@@ -5,7 +5,8 @@ import BusinessDetail from '../components/BusinessDetail'
 const mapStateToProps = (state) => {
   return {
     businesses: state.businesses,
-    isLoggedIn: state.isLoggedIn
+    isLoggedIn: state.isLoggedIn,
+    user: state.user
   }
 }
 

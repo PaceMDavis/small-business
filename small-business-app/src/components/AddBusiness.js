@@ -1,5 +1,5 @@
 import React from 'react'
-import Navigation from './Navigation'
+import Navigation from '../containers/Navigation'
 // import { Link } from 'react-router-dom'
 import {Button, TextField} from '@material-ui/core'
 class AddBusiness extends React.Component {
@@ -21,8 +21,8 @@ class AddBusiness extends React.Component {
   }
 
   handleSubmit = (event) => {
-    const businessTotal = this.businesses.length
     event.preventDefault()
+    const businessTotal = this.props.businesses.length
     const payload = {...this.state}
     payload.id = businessTotal + 1
     console.log('The Business', payload)

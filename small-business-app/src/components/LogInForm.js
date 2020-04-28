@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, TextField } from '@material-ui/core'
+import Navigation from '../containers/Navigation'
 
 
 class LogInForm extends React.Component {
@@ -27,8 +28,10 @@ class LogInForm extends React.Component {
     // console.log("howdy", this.state.username, this.props.user)
   return (
     <div>
-      <form onSubmit={this.login}
-      
+      <Navigation />
+      <form 
+      onSubmit={this.login}
+      class="form"
       >
         <TextField
         required id="standard-required"

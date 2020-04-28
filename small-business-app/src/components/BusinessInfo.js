@@ -29,10 +29,10 @@ const BusinessInfo = (props) => {
             <TableCell>Delete</TableCell>
           </TableRow>
           {props.businesses.map((business, idx) => (
-            <TableRow key={idx}>
-              <Link to={`/info/${business.id}`}>
-                <TableCell>{business.Name}</TableCell>
-              </Link> 
+            <TableRow key={idx} >
+              <TableCell component={Link} to={`/info/${business.id}`} >
+                {business.Name}
+              </TableCell>
               <TableCell>{business.Description}</TableCell>
               <TableCell>{business.Hours}</TableCell>
               <TableCell>{business.Address}</TableCell>
@@ -58,9 +58,9 @@ const BusinessInfo = (props) => {
           </TableRow>
           {props.businesses.map((business, index) => (
             <TableRow key={index}>
-              <Link to={`/info/${business.id}`}>
-                <TableCell>{business.Name}</TableCell>
-              </Link> 
+              <TableCell component={Link} to={`/info/${business.id}`} >
+                {business.Name}
+              </TableCell>
               <TableCell>{business.Description}</TableCell>
               <TableCell>{business.Hours}</TableCell>
               <TableCell>{business.Address}</TableCell>

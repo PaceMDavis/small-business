@@ -1,6 +1,9 @@
 import React from 'react'
 import {Container} from '@material-ui/core'
-import Navigation from './Navigation'
+import Navigation from '../containers/Navigation'
+
+
+
 
 const BusinessDetail = (props) => {
   const id = props.match.params.id

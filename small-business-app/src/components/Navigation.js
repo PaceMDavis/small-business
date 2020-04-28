@@ -1,10 +1,8 @@
 import React from 'react'
-import UserInfo from './UserInfo'
 import { AppBar, Toolbar, 
     Typography } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles' 
-import grey from '@material-ui/core/colors/grey'
 
 
 const theme = createMuiTheme({
