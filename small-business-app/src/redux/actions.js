@@ -33,3 +33,10 @@ export const user = (name) => {
     value: name
   }
 }
+
+export const addMapLocations = (location) => {
+  return {
+    type: 'ADD_MAPLOCATIONS',
+    value: location
+  }
+}

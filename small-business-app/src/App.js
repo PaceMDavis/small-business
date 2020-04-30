@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './redux/store'
 
+ const api_key = process.env.REACT_APP_GOOGLE_API_KEY
 
 function App () {
   // console.log(props.businesses)
@@ -18,7 +19,7 @@ function App () {
   //   })
   //   console.log(this.state.loggedIn, "check")
   // }
-  
+  console.log(api_key)
   return (
     <Provider store={store}>
       <BrowserRouter>

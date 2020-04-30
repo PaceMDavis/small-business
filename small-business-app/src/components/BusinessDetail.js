@@ -1,6 +1,8 @@
 import React from 'react'
 import {Container} from '@material-ui/core'
 import Navigation from '../containers/Navigation'
+import Maps from '../containers/Maps'
+
 
 
 
@@ -20,6 +22,7 @@ const BusinessDetail = (props) => {
           <h4>{info.Hours}</h4>
           <p>{info.Description}</p>
       </Container>
+      <Maps />
     </div>
   )
 }

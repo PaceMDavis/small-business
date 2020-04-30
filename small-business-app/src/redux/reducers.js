@@ -35,4 +35,13 @@ const isLoggedIn = (state = false, action) => {
   }
 }
 
-export default combineReducers({businesses, isLoggedIn, user})
+const mapLocations = (state = [], action) => {
+  switch(action.type) {
+    case 'ADD_MAPLOCATIONS':
+      return action.value
+    default:
+      return state
+  }
+}
+
+export default combineReducers({businesses, isLoggedIn, user, mapLocations})

@@ -39,5 +39,8 @@ export default {
       "Hours": "12PM - 8PM",
       "Address": "5301 Airport Blvd #100, Austin, TX 78751"
     }
+  ],
+  mapLocations: [
+    
   ] 
 };

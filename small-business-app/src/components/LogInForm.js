@@ -19,7 +19,7 @@ class LogInForm extends React.Component {
     document.cookie = "loggedIn=true;max-age=10000*1000"
     this.props.login(true)
     this.props.user(this.state.username)
-    this.props.history.push('/')
+    this.props.history.replace('/')
   }
 
   
