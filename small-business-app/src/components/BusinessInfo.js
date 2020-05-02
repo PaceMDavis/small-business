@@ -3,8 +3,6 @@ import { Container, Table, TableBody, TableRow, TableCell} from '@material-ui/co
 import {Link} from 'react-router-dom'
 import DeleteIcon from '@material-ui/icons/Delete'
 
-// import LogInForm from '../containers/LogInForm'
-
 const BusinessInfo = (props) => {
  
   const [logStatus, setLogStatus] = React.useState(false)
@@ -14,8 +12,6 @@ const BusinessInfo = (props) => {
     props.logout(false)
   }
 
-  // console.log(props.isLoggedIn, "barry")
-  
   return (
     props.isLoggedIn ? (
     <Container>
@@ -47,7 +43,7 @@ const BusinessInfo = (props) => {
       </Table>
     </Container>
     ) : (
-      <Container>
+    <Container>
       <Table>
         <TableBody>
           <TableRow>

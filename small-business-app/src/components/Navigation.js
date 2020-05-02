@@ -28,7 +28,6 @@ class Navigation extends React.Component {
 
   handleLogout = event => {
     this.props.logout(false)
-    // this.props.history.push('/')
     this.setState ({
       loggedIn: false
     })
@@ -37,7 +36,6 @@ class Navigation extends React.Component {
 
 
   render() {
-    // console.log(this.props.isLoggedIn, 'blue')
   return (
     this.state.loggedIn ? (
   <ThemeProvider theme={theme}>

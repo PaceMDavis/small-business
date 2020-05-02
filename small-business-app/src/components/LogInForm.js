@@ -25,7 +25,6 @@ class LogInForm extends React.Component {
   
     
   render() {
-    // console.log("howdy", this.state.username, this.props.user)
   return (
     <div>
       <Navigation />
@@ -40,14 +39,14 @@ class LogInForm extends React.Component {
         value = {this.state.username}
         onChange={this.handleTextChange}
         />
-          <br />
+        <br />
         <TextField
         required id="standard-password-input"
         type="password"
         label="Password"
         name="password"
         />
-          <br />
+        <br />
         <Button type="submit" id="button-login">LOGIN</Button>
       </form>
     </div>

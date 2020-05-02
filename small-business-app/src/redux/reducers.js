@@ -24,7 +24,6 @@ const user = (state = null, action) => {
 }
 
 const isLoggedIn = (state = false, action) => {
-  // console.log(state, action)
   switch(action.type) {
     case 'TOGGLE_LOGIN' :
       return true

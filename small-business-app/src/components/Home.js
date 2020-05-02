@@ -3,7 +3,6 @@ import BusinessInfo from '../containers/BusinessInfo'
 import Navigation from '../containers/Navigation'
 
 const Home = () => {
-  // console.log(props.isLoggedIn, "red")
   return (
     <div>
      <Navigation/>

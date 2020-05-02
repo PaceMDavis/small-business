@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import BusinessInfo from '../components/BusinessInfo'
-import { addBusiness, removeBusiness } from '../redux/actions'
+import { removeBusiness } from '../redux/actions'
 
 const mapStateToProps = (state) => {
   return {

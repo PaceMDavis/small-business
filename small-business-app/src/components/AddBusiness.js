@@ -1,6 +1,5 @@
 import React from 'react'
 import Navigation from '../containers/Navigation'
-// import { Link } from 'react-router-dom'
 import {Button, TextField} from '@material-ui/core'
 class AddBusiness extends React.Component {
 
@@ -31,13 +30,12 @@ class AddBusiness extends React.Component {
   }
 
   render() {
-    console.log(this.state)
   return (
     <div>
       <Navigation />
       <form
-      onSubmit={this.handleSubmit}
-      style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
+        onSubmit={this.handleSubmit}
+        style={{ display: 'flex', flexDirection: 'column', width: '350px' }}>
         <TextField 
         id="Name"
         placeholder="Name"

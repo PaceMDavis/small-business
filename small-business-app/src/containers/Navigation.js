@@ -1,7 +1,6 @@
 import { connect } from 'react-redux'
 import Navigation from '../components/Navigation'
 import { logout } from '../redux/actions'
-// import { addBusiness, removeBusiness } from '../redux/actions'
 
 const mapStateToProps = (state) => {
   return {
